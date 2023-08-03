@@ -1,0 +1,61 @@
+$primary: #AA0601;
+$secondary: #650300;
+$light: #DEE2E6;
+$dark: #555555;
+$gray: #707070;
+$light-gray: #DCDCDC;
+$dark-gray: #212529;
+$white: #FFF;
+$black: #000;
+$pink: #FBF2F2;
+$yellow: #FFFF82;
+$red: #9F1213;
+
+$font-size: 16px;
+$space: 16px;
+$gutter: 24px;
+
+$breakpoints: (
+  'md': 992px,
+  'sm': 767px,
+);
+
+$font-sizes: (
+  1: 4,
+  2: 3,
+  3: 2.625,
+  4: 2.25,
+  5: 2,
+  6: 1.5,
+  7: 1.25,
+  8: 1,
+  9: 0.875,  
+);
+
+$spaces: (
+  1: $space * 0.25,
+  2: $space * 0.5,
+  3: $space,
+  4: $space * 1.5,
+  5: $space * 2,
+  6: $space * 2.5,    
+	7: $space * 3,
+	8: $space * 3.75,  
+	9: $space * 4,
+	10: $space * 4.5,
+	11: $space * 5,
+	12: $space * 6,
+  13: $space * 7.75,
+);
+
+$dimensions: (
+  'm': 'margin',
+  'p': 'padding',
+);
+
+$directions: (
+  't': 'top', 
+  'b': 'bottom', 
+  'l': 'left', 
+  'r': 'right',
+);

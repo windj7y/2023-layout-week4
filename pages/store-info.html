@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>眼鏡官網 | 門市據點</title>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+
+  <main>
+    <div class="container pt-12 pb-11 pt-md-11 pt-sm-6 pb-sm-9">
+      <h2 class="fs-2 fs-sm-6 fw-bold mb-5 mb-sm-4 border-left-8 border-red pl-3">門市據點</h2>
+      <div class="d-flex align-items-center mb-6 mb-sm-4">
+        <label for="store" class="form-label fs-6 fs-sm-8 mr-3 mr-sm-2">選擇分店</label>
+        <select class="form-select" name="store" id="store">
+          <option value="台北中山旗艦店">台北中山旗艦店</option>
+          <option value="台北綠園店">台北綠園店</option>
+          <option value="台中清水旗艦店">台中清水旗艦店</option>
+          <option value="高雄中正形象店">高雄中正形象店</option>
+          <option value="高雄夢時代店">高雄夢時代店</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-5 col-md-12 mb-md-4">
+          <div class="card text-dark-gray row-md flex-sm-column">
+            <img src="../assets/images/storepage-1.png" alt="store" class="d-md-none">
+            <img src="../assets/images/store-1.png" alt="store" class="d-none d-md-block col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12">
+              <div class="card-header border-1">
+                <h3>台北中山旗艦店</h3>
+              </div>
+              <ul class="card-body border-1 fs-7">
+                <li class="d-flex align-items-center mb-2">
+                  <span class="material-icons-outlined mr-2">phone</span>
+                  <p>電話：(02)000-1234</p>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <span class="material-icons-outlined mr-2">schedule</span>
+                  <p>營業時間：10:00-21:00</p>
+                </li>
+                <li class="d-flex">
+                  <span class="material-icons-outlined mr-2">place</span>
+                  <p>地址：台北市中山區南京東路25巷2-1號</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-7 col-md-12">
+          <img src="../assets/images/map.png" alt="map">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <%- include('./layout/footer'); -%>
+
+  <script type="module" src="../main.js"></script>
+</body>
+</html>

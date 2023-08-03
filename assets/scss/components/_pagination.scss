@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+}
+
+.page-link {
+  color: $dark;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding: 12px 16px;
+  border: 1px solid $dark;
+
+  @include mobile {
+    font-size: 16px;
+    padding: 12px 13px;
+  }
+
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+
+  &.active {
+    background: $black;
+    color: $white;
+  }
+}
+
+.next-page {
+  background: #F2F2F2;
+}

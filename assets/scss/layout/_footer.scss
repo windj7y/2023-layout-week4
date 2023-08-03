@@ -1,0 +1,37 @@
+.footer-nav {
+  &-link {
+    color: $white;
+    padding: 12px 24px;
+
+    &:hover {
+      color: $yellow;
+    }
+
+    @include pad {
+      padding: 8px 24px;
+    }
+  }
+
+  &-item:first-child .footer-nav-link {
+    padding-left: 0;
+  }
+}
+
+.icon-link {
+  width: 48px;
+  height: 48px;
+
+  &:hover {
+    box-shadow: 0px 0px 15px 2px $white;
+  }
+
+  @include pad {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include mobile {
+    width: 24px;
+    height: 24px;
+  }
+}

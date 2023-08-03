@@ -1,0 +1,130 @@
+@each $dim in $dimensions {
+	//迴圈四個方向
+	@each $dir in $directions {
+		@each $name, $value in $spaces {
+			.#{nth($dim,1)}#{nth($dir,1)}-#{$name} {
+				#{nth($dim,2)}-#{nth($dir,2)}: $value;
+			}
+		}
+	}
+}
+
+.py- {
+  &2 {
+    padding-top:  map-get($spaces, 2);
+    padding-bottom: map-get($spaces, 2);
+  }
+
+  &3 {
+    padding-top:  map-get($spaces, 3);
+    padding-bottom: map-get($spaces, 3);
+  }
+
+  &5 {
+    padding-top:  map-get($spaces, 5);
+    padding-bottom: map-get($spaces, 5);
+  }
+
+  &11 {
+    padding-top:  map-get($spaces, 11);
+    padding-bottom: map-get($spaces, 11);
+  }  
+}
+
+.px- {
+  &3 {
+    padding-left:  map-get($spaces, 3);
+    padding-right: map-get($spaces, 3);
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include pad {
+  .p- {
+    &md- {
+      &0 {
+        padding: 0;
+      }
+    }
+  }
+
+  .mr- {
+    &md- {
+      &0 {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .p- {
+    &sm- {
+      &0 {
+        padding: 0;
+      }
+    }
+  }
+
+  .py- {
+    &sm- {
+      &3 {
+        padding-top: map-get($spaces, 3);
+        padding-bottom: map-get($spaces, 3);
+      }
+
+      &4 {
+        padding-top: map-get($spaces, 4);
+        padding-bottom: map-get($spaces, 4);
+      }      
+
+      &6 {
+        padding-top: map-get($spaces, 6);
+        padding-bottom: map-get($spaces, 6);
+      }
+    }
+  }
+
+  .p-custom- {
+    &sm- {
+      &1 {
+        padding: 16px 15px;
+      }
+    }
+  }
+
+  .mr- {
+    &sm- {
+      &0 {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .mb- {
+    &sm- {
+      &0 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @media(max-width: $width) {
+    @each $dim in $dimensions {
+      //迴圈四個方向
+      @each $dir in $directions {
+        @each $name, $value in $spaces {
+          .#{nth($dim,1)}#{nth($dir,1)}-#{$breakpoint}-#{$name} {
+            #{nth($dim,2)}-#{nth($dir,2)}: $value;
+          }
+        }
+      }
+    }
+  }
+}

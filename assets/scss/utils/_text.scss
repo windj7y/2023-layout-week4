@@ -1,0 +1,71 @@
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+// font size
+
+@each $name, $value in $font-sizes {
+	.fs-#{$name} {
+		font-size: $font-size * $value;
+	}
+}
+
+@each $breakpoint, $width in $breakpoints {
+	@media(max-width: $width) {
+		@each $name, $value in $font-sizes {
+			.fs-#{$breakpoint}-#{$name} {
+				font-size: $font-size * $value;
+			}
+		}
+	}
+}
+
+// font weight
+
+.fw- {
+	&medium {
+		font-weight: 500;
+	}
+
+	&bold {
+		font-weight: 700;
+	}
+
+	&black {
+		font-weight: 900;
+	}
+}
+
+// font style
+
+.fst-italic {
+	font-style: italic;
+}
+
+// text color and align
+
+.text- {
+	&white {
+		color: $white;
+	}
+
+	&black {
+		color: $black;
+	}
+
+	&dark {
+		color: $dark;
+	}
+
+	&gray {
+		color: $gray;
+	}
+
+	&dark-gray {
+		color: $dark-gray;
+	}
+
+	&center {
+		text-align: center;
+	}
+}

@@ -1,0 +1,42 @@
+.blog-menu {
+  display: flex;
+
+  &-link {
+    color: $white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 24px;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  &-item:first-child .blog-menu-link {
+    padding-left: 0;
+  }
+}
+
+@include mobile {
+  .blog-menu {
+    width: 100%;
+
+    &-link {
+      font-size: 16px;
+      padding: 12px;
+    }
+
+    &-item:last-child .blog-menu-link {
+      padding-right: 0;
+    }
+  }
+}
+
+.share-link {
+  width: 24px;
+  height: 24px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

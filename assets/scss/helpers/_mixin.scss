@@ -1,0 +1,22 @@
+@mixin pad {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin picture-replace {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin col-gutter {
+  padding-left: calc(#{$gutter} / 2);
+  padding-right: calc(#{$gutter} / 2);
+}

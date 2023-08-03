@@ -1,0 +1,6 @@
+.logo {
+  background: url(../images/logo-white.png) no-repeat center / contain;
+  width: 80px;
+  height: 48px;
+  @include picture-replace;
+}

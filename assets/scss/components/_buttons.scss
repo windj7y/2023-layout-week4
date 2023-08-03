@@ -1,0 +1,36 @@
+.btn {
+  font-family: 'Noto Sans TC', sans-serif;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+
+  &-sm {
+    padding: 6px 12px;
+  }
+  
+  &-primary {
+    background: $primary;
+    color: $white;
+
+    &:hover {
+      background: $secondary;
+    }
+  }
+
+  &-black {
+    background: $black;
+    color: $white;
+
+    &:hover {
+      background: $primary;
+    }
+  }
+
+  &-width {
+    width: 416px;
+
+    @include pad {
+      width: 336px;
+    }
+  }
+}

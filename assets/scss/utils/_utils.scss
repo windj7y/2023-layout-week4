@@ -1,0 +1,21 @@
+.material-icons-outlined {
+  vertical-align: bottom;
+}
+
+.hover {
+  &:hover {
+    color: $yellow;
+  }
+
+  &-primary {
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &-secondary {
+    &:hover {
+      color: $secondary;
+    }
+  }
+}

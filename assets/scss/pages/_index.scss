@@ -1,0 +1,57 @@
+.banner {
+  background: url(../images/home-header.png) no-repeat center / cover;
+  height: 787px;
+
+  @include pad {
+    background-image: url(../images/home-header-sm.png);
+  }
+
+  @include mobile {
+    height: 396px;
+  }
+}
+
+.feature-img {
+  width: 100px;
+  height: 100px;
+}
+
+.classic-img {
+  @include pad {
+    width: 336px;
+    height: 336px;
+  }
+
+  @include mobile {
+    width: 348px;
+    height: 348px;
+  }
+}
+
+.bg {
+  background: url(../images/index-bg.png) no-repeat;
+  background-size: cover;
+  height: 608px;
+
+  @include pad {
+    background-image: url(../images/index-bg-sm.png);
+    height: 960px;
+  }
+
+  @include mobile {
+    background-image: url(../images/index-bg-md.png);
+    height: 820px;
+  }
+}
+
+.joint-img {
+  @include pad {
+    width: 696px;
+    height: 240px;
+  }
+
+  @include mobile {
+    width: 348px;
+    height: 240px;
+  }
+}
